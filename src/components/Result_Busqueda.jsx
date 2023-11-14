@@ -11,14 +11,14 @@ const Result_Busqueda = () => {
 
 
     const obtenerProductosSearch = useCallback( async () => {
-        console.log(search);
+        //console.log(search);
         let url = `https://apibazaruniversal.onrender.com/api/product`;
         if(search !== '' && search !== undefined){
          url = `https://apibazaruniversal.onrender.com/api/product/find?title=${search}`;
         }
         const resp = await fetch(url);
         const data = await resp.json();
-        console.log(data);
+        //console.log(data);
         setProducts(data);
     },[search]);
 

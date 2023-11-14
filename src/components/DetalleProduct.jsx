@@ -14,11 +14,11 @@ const DetalleProduct = () => {
 
 
     const obtenerProducto = useCallback( async () => {
-        console.log(id);
+        //console.log(id);
         let url = `https://apibazaruniversal.onrender.com/api/product/${id}`;
         const resp = await fetch(url);
         const data = await resp.json();
-        console.log(data);
+       // console.log(data);
         setProduct(data);
     },[id]);
 
