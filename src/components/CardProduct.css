@@ -1,0 +1,4 @@
+.col.card:hover {
+    background-color: #3c75af81; /* Cambia el color de fondo al pasar el ratón sobre el componente */
+    transition: background-color 0.3s ease; /* Agrega una transición suave */
+  }
